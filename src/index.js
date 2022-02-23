@@ -3,7 +3,7 @@ import './sass/main.scss';
 document.querySelector('.live-search').oninput = function () {
   let value = this.value.trim();
   let searhItems = document.querySelectorAll('.search li');
-  // console.log('~ searhItems', searhItems);
+  console.log('~ searhItems', searhItems);
   if (value != '') {
     searhItems.forEach(function (elem) {
       if (elem.innerText.search(value) === -1) {
